@@ -1,0 +1,111 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; border: none; outline: none}
+img {max-width: 100%;}
+@font-face {
+    font-family: Forte;
+    src: url(../typo/FORTE.TTF);
+}
+body {
+    font-family: Forte, monospace;
+    font-size: 18px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+main {
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculadora {
+    width: 320px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 22px 17px 47px 1px rgba(0,0,0,0.7);
+    align-items: center;
+    position: relative;
+}
+.calculadora div{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/* DRAGGABLE */
+.draggable {
+    position: absolute;
+    z-index: 9;
+}
+div.agarradero {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    cursor: move;
+    z-index: 10;
+}
+div.agarradero img{
+    transform: scale(.6);
+}
+input:not(#pantalla),
+input + label {
+    cursor: pointer;
+}
+input[type="text"]{
+    width: 100%;
+    height: 50px;
+    font-family: Forte, monospace;
+    font-size: 2.5em;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: right;
+}
+input[type="button"] {
+    display: block;
+    width: 25%;
+    height: 60px;
+    font-family: Forte, monospace;
+    font-size: 2em;
+    border: 1px solid;
+    border-radius: 5px;
+}
+input[name="igual"] {
+    width: 100%;
+}
+input[type="radio"] {
+    visibility:hidden;
+}
+.radioLabel {
+    transition: .4s ease-in-out;
+    color: #fff;
+}
+.subrayado {
+    border-bottom: 2px solid;
+    border-radius: 7px;
+}
+
+.logo {
+    width: 15%;
+    min-width: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

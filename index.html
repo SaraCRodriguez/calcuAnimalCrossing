@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/functions.js"></script>
+</head>
+
+<body id="body">
+    <main>
+        <!-- SELECTOR DE APARIENCIA -->
+        <form name="selectTema">
+            <div>
+                <input type="radio" id="bg01" name="changeTema" value="bg01">
+                <label class="radioLabel  happyLife" for="bg01">Happy Life</label>
+            </div>
+            <div>
+                <input type="radio" id="bg02" name="changeTema" value="bg02">
+                <label class="radioLabel  greenPicnic" for="bg02">Picnic</label>
+            </div>
+            <div>
+                <input type="radio" id="bg03" name="changeTema" value="bg03">
+                <label class="radioLabel  presents" for="bg03">Presents for everyone</label>
+            </div>
+            <div>
+                <input type="radio" id="bg04" name="changeTema" value="bg04">
+                <label class="radioLabel  sunset" for="bg04">Sunset</label>
+            </div>
+            <div>
+                <input type="radio" id="bg05" name="changeTema" value="bg05">
+                <label class="radioLabel  neightbours" for="bg05">Neightbours</label>
+            </div>
+        </form>
+
+
+        <!-- CALCULADORA -->
+        <div class="flex">
+            <div class="calculadora draggable">
+                <div class="agarradero">
+                    <img src="img/arrow_draggable.svg" alt="icono para mover la calculadora de sitio">
+                </div>
+                <div class="">
+                    <input type="text" name="pantalla" id="pantalla" readonly>
+                </div>
+                <div class="">
+                    <input type="button" name="numsiete" id="numsiete" value="7">
+                    <input type="button" name="numocho" id="numocho" value="8">
+                    <input type="button" name="numnueve" id="numnueve" value="9">
+                    <input type="button" name="sumar" id="sumar" value="+">
+                </div>
+                <div class="">
+                    <input type="button" name="numcuatro" id="numcuatro" value="4">
+                    <input type="button" name="numcinco" id="numcinco" value="5">
+                    <input type="button" name="numseis" id="numseis" value="6">
+                    <input type="button" name="restar" id="restar" value="-">
+                </div>
+                <div class="">
+                    <input type="button" name="numuno" id="numuno" value="1">
+                    <input type="button" name="numdos" id="numdos" value="2">
+                    <input type="button" name="numtres" id="numtres" value="3">
+                    <input type="button" name="multiplicar" id="multiplicar" value="*">
+                </div>
+                <div class="">
+                    <input type="button" name="numpunto" id="numpunto" value=".">
+                    <input type="button" name="numcero" id="numcero" value="0">
+                    <input type="button" name="reset" id="reset" value="AC">
+                    <input type="button" name="dividir" id="dividir" value="/">
+                </div>
+                <div class="">
+                    <input type="button" name="igual" id="igual" value="=">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo">
+            <img src="img/Logo_AnimalCrossing.png" alt="logo Animal Crossing">
+        </div>
+    </footer>
+</body>
+
+</html>
